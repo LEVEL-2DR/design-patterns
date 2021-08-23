@@ -1,0 +1,19 @@
+PROXY DESIGN PATTERN::
+
+1.When we want a simplified version of complex objects or heavy objects.
+  
+  DESC::
+  		In this case, we may represent it with a skeleton object which loads the original object on demand, also called as lazy intilization.
+  		This is known as the virtual proxy.
+
+
+2.When the original object is present in different address space and we want to represent it locally.
+
+	DESC::
+		  We can create a proxy which does all the necessary boilerplate stuff like creating and mainting the connection , encoding and decoding..etc. while the client access it as it was present in their local addresssoace.
+		  This is called the Remote Proxy.
+
+3.When we want to add a layer of security to the original underlying object to provide controlled  access based on access rights og the client.
+
+	DESC::
+		  This is called protection Proxy.
